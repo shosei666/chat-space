@@ -23,10 +23,10 @@ Things you may want to cover:
 
 * ...
 
-## ueurs table
+## users table
 |Column|type|Option|
 |------|----|-------|
-|name|string|index:true,null:false,unique:true|
+|name|string|index: true,null: false, unique:true|
 |mail|string|null: false, unipue: true|
 
 ### Association
@@ -47,7 +47,7 @@ Things you may want to cover:
 ## message table
 |Column|type|Option|
 |------|----|-------|
-|body|text|null:false|
+|body|text|null: false|
 |image|string|
 |group|references|foreign_key: true|
 |user|references|foreign_key: true|
@@ -61,8 +61,8 @@ Things you may want to cover:
 
 |Column|type|Option|
 |------|----|-------|
-|group|references|null: false, foreign_key: true|
-|user|references|null: false, foreign_key: true|
+|group|references|index: true, foreign_key: true, null: false|
+|user|references|index: true, foreign_key: true, null: false|
 
 ### Association
 - belongs_to :group
