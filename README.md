@@ -24,7 +24,7 @@ Things you may want to cover:
 * ...
 
 ## ueurs table
-|Column|Type|Options|
+|Column|type|Option|
 |------|----|-------|
 |name|string|index:true,null:false,unique:true|
 |mail|string|null: false, unipue: true|
@@ -35,18 +35,17 @@ Things you may want to cover:
 - has_many :massages
 
 ## groups table
-|Column|Type|Options|
+|Column|type|Option|
 |------|----|-------|
 |name|string|index: true, null: false, unipue: true|
 
 ### Association
-
 - has_many :users, through: :group_users
 - has_many :group_users
 - has_many :messages
 
 ## message table
-|Column|Type|Options|
+|Column|type|Option|
 |------|----|-------|
 |body|text|null:false|
 |image|string|
@@ -54,17 +53,16 @@ Things you may want to cover:
 |user|references|foreign_key: true|
 
 ### Association
-
 - belongs_to :user
 - belongs_to :group
 
 
-## groups_users table
+## group_users table
 
-|Column|Type|Options|
+|Column|type|Option|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
