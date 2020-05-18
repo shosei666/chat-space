@@ -32,7 +32,7 @@ Things you may want to cover:
 ### Association
 - has_many :groups, through: :group_users
 - has_many :group_users
-- has_many :massages
+- has_many :messages
 
 ## groups table
 |Column|type|Option|
@@ -47,7 +47,7 @@ Things you may want to cover:
 ## message table
 |Column|type|Option|
 |------|----|-------|
-|body|text|null: false|
+|body|text|
 |image|string|
 |group|references|foreign_key: true|
 |user|references|foreign_key: true|
