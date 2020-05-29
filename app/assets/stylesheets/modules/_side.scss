@@ -1,0 +1,73 @@
+.side_bar{
+  float: left;
+  height: 100vh;
+  width:300px;
+   .side_bar_top{
+    height: 100px;
+    width: 300px;
+    background-color: #253141;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+}
+
+.side_bar_user{
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  height: 20px;
+  font-weight: bold;
+  color: $white;
+  .side_bar_name{
+     font-weight: bold;
+  }
+}
+
+.side_bar_menu{
+  list-style: none;
+  width: 45px;
+  height: 20px;
+  display: flex;
+  margin:0 0 0 auto
+}
+.side_bar_menu_new_group{
+  display: flex;
+  height: 16px;
+  width: 16px;
+  margin:0 0 0 auto
+}
+.side_bar_menu__edit_user{
+  display: flex;
+  height: 16px;
+  width: 16px;
+  margin:0 0 0 auto
+}
+.a{
+  color: $white;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.side_bar_glist{
+  width: 300px;
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  padding: 0 20px;
+  overflow: scroll;
+  .group{
+    box-sizing: border-box;
+    padding: 20px 0 40px;
+    &__name {
+      color: $white;
+      font-size: 15px;
+    }
+    &__message {
+      color: $white;
+      font-size: 15px;
+      margin-top: 5px;
+    }
+  }
+}
+
