@@ -65,7 +65,6 @@ $('#new_message').on('submit', function(e){
  })
  var reloadMessages = function() {
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-    setInterval(reloadMessages, 7000);
     var last_message_id = $('.message:last').data("message-id");
     $.ajax({
       url: "api/messages",
